@@ -241,11 +241,3 @@ export function Contact({ data }: ContactProps) {
     </section>
   )
 }
-
-/* 
-<iframe 
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.4632249165297!2d-102.28343352494343!3d21.8782310799922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429cc1cab1121e1%3A0x6044fc8a3fc17cad!2sPlaza%20Kristal!5e0!3m2!1ses-419!2smx!4v1741233195130!5m2!1ses-419!2smx" 
-
-width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-*/
