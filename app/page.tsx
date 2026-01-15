@@ -6,6 +6,7 @@ import { Gallery } from "@/components/gallery"
 import { Contact } from "@/components/contact"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { Turism } from "@/components/turism"
 
 export default async function Home() {
   const supabase = await createClient()
@@ -26,6 +27,7 @@ export default async function Home() {
       <About data={aboutData.data} />
       <Rooms data={roomsData.data || []} />
       <Gallery data={galleryData.data || []} />
+      <Turism />
       <Contact data={contactData.data} />
       <Footer data={contactData.data} />
     </main>

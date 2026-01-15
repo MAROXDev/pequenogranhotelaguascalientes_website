@@ -22,9 +22,15 @@ export function About({ data }: AboutProps) {
           {/* Image */}
           {data.image_url && (
             <div className="relative order-2 md:order-1">
-              <div className="relative h-[auto] md:h-[auto] rounded-sm overflow-hidden shadow-2xl text-background">
+              {/* <div className="relative h-[auto] md:h-[auto] rounded-sm overflow-hidden shadow-2xl text-background"> */}
+              <div className="flex flex-col rounded-sm overflow-hidden shadow-2xl">
                 <Image
-                  src="https://i.postimg.cc/bJrdrSd4/Sobre_nosotros.jpg"
+                src="https://i.postimg.cc/bJrdrSd4/Sobre_nosotros.jpg"
+                width={400}
+                height={400}
+                className="w-full h-auto object-cover"
+                priority
+                alt={data.title}
                   // {
                   //  data.image_url ||
                   //  "https://i.postimg.cc/bJrdrSd4/Sobre_nosotros.jpg"
@@ -35,6 +41,12 @@ export function About({ data }: AboutProps) {
                 />
                 <Image
                   src="https://i.postimg.cc/8zF7T6J9/Habitacion-Triple-familiar.jpg"
+                  className="w-full h-auto object-cover"
+                  width={"400"}
+                  height={"400"}
+                  //fill
+                  alt={data.title}
+                  
                   // {
                   //  data.image_url ||
                   //  "https://i.postimg.cc/bJrdrSd4/Sobre_nosotros.jpg"
