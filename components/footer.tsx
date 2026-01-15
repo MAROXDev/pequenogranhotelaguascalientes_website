@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { MapPin, Phone, Mail, Heart } from "lucide-react"
+import { MapPin, Phone, Mail, Heart, CloudSun } from "lucide-react"
 import Image from "next/image"
 
 interface FooterData {
@@ -20,6 +20,9 @@ export function Footer({ data }: FooterProps) {
     <div className="flex align-center justify-center gap-10 mx-4 my-4">
     <a
     href="http://www.vivaaguascalientes.com/"
+    target="_blank"
+    rel="noopener"
+    aria-label="www.vivaaguascalientes.com"
     >
     <Image
     src="./img-logo01.jpg"
@@ -31,6 +34,9 @@ export function Footer({ data }: FooterProps) {
     </a>
     <a
     href="http://www.visitmexico.com/es"
+    target="_blank"
+    rel="noopener"
+    aria-label="http://www.visitmexico.com/es"
     >
     <Image
     src="./img-logo02.jpg"
@@ -42,6 +48,9 @@ export function Footer({ data }: FooterProps) {
     </a>
     <a
     href="http://www.hotelesmexicanos.org/"
+    target="_blank"
+    rel="noopener"
+    aria-label="http://www.hotelesmexicanos.org/"
     >
     <Image
     src="./img-logo03.jpg"
@@ -53,6 +62,9 @@ export function Footer({ data }: FooterProps) {
     </a>
     <a
     href="http://www.sectur.gob.mx/"
+    target="_blank"
+    rel="noopener"
+    aria-label="http://www.sectur.gob.mx/"
     >
     <Image
     src="./img-logo04.jpg"
@@ -78,10 +90,7 @@ export function Footer({ data }: FooterProps) {
               Un refugio de elegancia y confort en el corazón de Aguascalientes. Donde cada detalle cuenta una historia
               de hospitalidad.
             </p>
-            <div className="flex gap-2 items-center text-primary-foreground/60">
-              
-              
-              
+            <div className="flex gap-4 items-center text-primary-foreground/60">
             </div>
           </div>
 
@@ -170,7 +179,17 @@ export function Footer({ data }: FooterProps) {
                 </li>
               </ul>
             )}
+            <a 
+            href="https://www.tutiempo.net"
+            className="flex gap-2 mt-5 items-end text-center text-primary-foreground/80"
+            target="_blank"
+            rel="noopener"
+            aria-label="www.vivaaguascalientes.com" 
+             ><CloudSun size={"40"} /> 
+            <p className="text-center">Consulta el tiempo aquí</p>
+            </a>
           </div>
+          
         </div>
 
         <div className="border-t border-primary-foreground/20 pt-8">

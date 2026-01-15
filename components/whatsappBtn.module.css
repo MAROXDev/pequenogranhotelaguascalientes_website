@@ -22,11 +22,13 @@
   position: absolute;
   right: 72px;
   top: 50%;
+  font-weight: 600;
   transform: translateY(-50%);
-  background: #111;
-  color: #fff;
+  background: #fff;
+  color: oklch(0.42 0.15 25);
   padding: 8px 12px;
-  border-radius: 8px;
+  box-shadow: 1px 1px oklch(0.25 0 0);
+  border-radius: 8px 0 8px 8px;
   font-size: 14px;
   white-space: nowrap;
   opacity: 0;
