@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { MapPin, Phone, Mail, Heart } from "lucide-react"
-import Image from "next/image"
 
 interface FooterData {
   address: string
@@ -16,56 +15,7 @@ export function Footer({ data }: FooterProps) {
   const currentYear = new Date().getFullYear()
 
   return (
-    <>
-    <div className="flex align-center justify-center gap-10 mx-4 my-4">
-    <a
-    href="http://www.vivaaguascalientes.com/"
-    >
-    <Image
-    src="./img-logo01.jpg"
-    className="object-fit w-full h-full"
-    width={"150"}
-    height={"100"}
-    alt={"img-logo001"}
-    />
-    </a>
-    <a
-    href="http://www.visitmexico.com/es"
-    >
-    <Image
-    src="./img-logo02.jpg"
-    className="object-fit w-full h-full"
-    width={"150"}
-    height={"100"}
-    alt={"img-logo002"}
-    />
-    </a>
-    <a
-    href="http://www.hotelesmexicanos.org/"
-    >
-    <Image
-    src="./img-logo03.jpg"
-    className="object-fit w-full h-full"
-    width={"150"}
-    height={"100"}
-    alt={"img-logo003"}
-    />
-    </a>
-    <a
-    href="http://www.sectur.gob.mx/"
-    >
-    <Image
-    src="./img-logo04.jpg"
-    className="object-fit w-full h-full"
-    width={"150"}
-    height={"100"}
-    alt={"img-logo004"}
-    />
-    </a>
-    </div>
-      
-      <footer className="bg-primary text-primary-foreground relative overflow-hidden">
-
+    <footer className="bg-primary text-primary-foreground relative overflow-hidden">
       {/* Decorative top border */}
       <div className="h-2 bg-gradient-to-r from-accent via-secondary to-accent" />
 
@@ -91,7 +41,7 @@ export function Footer({ data }: FooterProps) {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/#inicio"
+                  href="#inicio"
                   className="text-primary-foreground/80 hover:text-secondary transition-colors inline-flex items-center gap-2 group"
                 >
                   <span className="w-0 group-hover:w-4 h-px bg-secondary transition-all" />
@@ -100,7 +50,7 @@ export function Footer({ data }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href="/#nosotros"
+                  href="#nosotros"
                   className="text-primary-foreground/80 hover:text-secondary transition-colors inline-flex items-center gap-2 group"
                 >
                   <span className="w-0 group-hover:w-4 h-px bg-secondary transition-all" />
@@ -109,7 +59,7 @@ export function Footer({ data }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href="/#habitaciones"
+                  href="#habitaciones"
                   className="text-primary-foreground/80 hover:text-secondary transition-colors inline-flex items-center gap-2 group"
                 >
                   <span className="w-0 group-hover:w-4 h-px bg-secondary transition-all" />
@@ -118,26 +68,16 @@ export function Footer({ data }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href="/#galeria"
+                  href="#galeria"
                   className="text-primary-foreground/80 hover:text-secondary transition-colors inline-flex items-center gap-2 group"
                 >
                   <span className="w-0 group-hover:w-4 h-px bg-secondary transition-all" />
                   Galería
                 </Link>
-
               </li>
               <li>
                 <Link
-                  href="/#turismo"
-                  className="text-primary-foreground/80 hover:text-secondary transition-colors inline-flex items-center gap-2 group"
-                >
-                  <span className="w-0 group-hover:w-4 h-px bg-secondary transition-all" />
-                  Turismo
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/#contacto"
+                  href="#contacto"
                   className="text-primary-foreground/80 hover:text-secondary transition-colors inline-flex items-center gap-2 group"
                 >
                   <span className="w-0 group-hover:w-4 h-px bg-secondary transition-all" />
@@ -188,7 +128,5 @@ export function Footer({ data }: FooterProps) {
         </div>
       </div>
     </footer>
-      </>
-    
   )
 }
