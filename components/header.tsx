@@ -23,7 +23,6 @@ export function Header() {
     { href: "/habitaciones", label: "Habitaciones" },
     { href: "/ofertas", label: "Ofertas" },
     { href: "/servicios", label: "Servicios" },
-    { href: "/reservaciones", label: "Reservaciones" },
     { href: "/recompensas", label: "Recompensas" },
     { href: "/politicas", label: "Políticas" },
   ]

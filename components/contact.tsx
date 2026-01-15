@@ -224,7 +224,7 @@ export function Contact({ data }: ContactProps) {
               <Card className="border-0 shadow-lg overflow-hidden">
                 <div className="relative h-80 bg-muted">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7405.004504906817!2d-102.311977!3d21.876727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee84d29d523f%3A0x905e018193e38bb9!2sPeque%C3%B1o%20Gran%20Hotel!5e0!3m2!1ses-419!2sus!4v1768509552141!5m2!1ses-419!2sus" 
+                    src={`https://www.google.com/maps/embed/v1/place?key=&q=${encodeURIComponent(data.address)}`}
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
