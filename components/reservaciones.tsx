@@ -121,8 +121,8 @@ export function BookingSection({ data }: { data: Offer[] }) {
                     target="_blank"
                     rel="noopener"
                     aria-label="WhatsApp"
-                    className="text-primary">aquí</a>, o llame a un especialista en reservaciones para grupos al 
-                    <a href="tel:+01 800 830 8044" className="hover:text-primary transition-colors">01 800 830 8044 </a>
+                    className="text-primary"> aquí </a>, o llame a un especialista en reservaciones para grupos al 
+                    <a href="tel:+01 800 830 8044" className="hover:text-primary transition-colors"> 01 800 830 8044 </a>
                     para comenzar.
                 </p>
               
