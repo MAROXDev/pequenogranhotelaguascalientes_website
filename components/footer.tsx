@@ -136,15 +136,6 @@ export function Footer({ data }: FooterProps) {
               </li>
               <li>
                 <Link
-                  href="/#turismo"
-                  className="text-primary-foreground/80 hover:text-secondary transition-colors inline-flex items-center gap-2 group"
-                >
-                  <span className="w-0 group-hover:w-4 h-px bg-secondary transition-all" />
-                  Turismo
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/#contacto"
                   className="text-primary-foreground/80 hover:text-secondary transition-colors inline-flex items-center gap-2 group"
                 >

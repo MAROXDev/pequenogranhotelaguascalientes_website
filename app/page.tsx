@@ -27,7 +27,6 @@ export default async function Home() {
       <About data={aboutData.data} />
       <Rooms data={roomsData.data || []} />
       <Gallery data={galleryData.data || []} />
-      <Turism />
       <Contact data={contactData.data} />
       <Footer data={contactData.data} />
     </main>

@@ -21,12 +21,12 @@ export function PrivacySection() {
 
   return (
     <section className="py-20 px-4 md:px-6 bg-cream">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="font-serif text-4xl md:text-6xl text-brown mb-6">Política de Privacidad</h1>
+          <h1 className="font-serif text-4xl md:text-6xl text-brown mb-6 mt-6">Política de Privacidad</h1>
           <p className="text-lg text-dark-gray max-w-3xl mx-auto leading-relaxed">
-            Conoce la Política de Privadidad de nuestro hotel
+            Conoce la Política de Privacidad de nuestro hotel
           </p>
         </div>
 

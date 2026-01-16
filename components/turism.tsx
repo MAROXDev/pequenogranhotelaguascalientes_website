@@ -22,29 +22,17 @@ interface RoomsProps {
 export function Turism() {
 
   return (
-    <section id="turismo" className="py-24 md:py-40 bg-cream relative">
-      <div
-        className="absolute inset-0 opacity-5"
-        style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)`,
-          backgroundSize: "40px 40px",
-        }}
-      />
-
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-20">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="h-px w-12 bg-burgundy" />
-            <Star className="text-burgundy" size={20} fill="currentColor" />
-            <div className="h-px w-12 bg-burgundy" />
-          </div>
-          <h2 className="font-serif md:text-6xl lg:text-7xl font-bold text-brown mb-6 text-balance text-4xl">
-            Turismo
-          </h2>
-          <p className="text-2xl text-dark-gray max-w-3xl mx-auto text-balance leading-relaxed">
+    <section className="py-20 px-4 md:px-6 bg-cream">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <h1 className="font-serif text-4xl md:text-6xl text-brown mb-6 mt-6">Turismo</h1>
+          <p className="text-lg text-dark-gray max-w-3xl mx-auto leading-relaxed">
             Explora los misterios de nuestros lugares turísticos
           </p>
         </div>
+
+      <div className="container mx-auto px-4 relative z-10">
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             <Card
@@ -299,6 +287,7 @@ export function Turism() {
             </Card>
 
         </div>
+      </div>
       </div>
     </section>
   )
