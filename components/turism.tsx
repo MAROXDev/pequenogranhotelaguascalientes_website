@@ -1,50 +1,37 @@
 import Image from "next/image"
-import Link from "next/link"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Users, Check, Star, ArrowRight } from "lucide-react"
+import Slider from "./slider"
 
-/* interface Room {
-  id: string
-  name: string
-  description: string
-  price_per_night: number
-  capacity: number
-  image_url: string
-  amenities: string[]
-  available: boolean
-}
-
-interface RoomsProps {
-  data: Room[]
-} */
 
 export function Turism() {
 
   return (
     <section className="py-20 px-4 md:px-6 bg-cream">
-      <div className="max-w-6xl mx-auto">
+      
         {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="font-serif text-4xl md:text-6xl text-brown mb-6 mt-6">Turismo</h1>
+        <div className="text-center mb-2">
+          <h1 className="font-serif text-4xl md:text-6xl text-brown mb-4 mt-6">Turismo</h1>
           <p className="text-lg text-dark-gray max-w-3xl mx-auto leading-relaxed">
             Explora los misterios de nuestros lugares turísticos
           </p>
         </div>
 
+        <Slider />
+  <div className="max-w-6xl mx-auto">
       <div className="container mx-auto px-4 relative z-10">
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             <Card
               key={"real_de_asientos"}
-              className="overflow-hidden pt-0 hover:shadow-2xl transition-all duration-300 group border-0 bg-white"
+              className="overflow-hidden hover:shadow-2xl transition-all duration-300 group border-0 bg-white"
             >
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src={"./turismo01.jpg"}
                   alt={"Turismo 1"}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <CardHeader className="pb-4">
@@ -81,14 +68,14 @@ export function Turism() {
 
             <Card
               key={"cristo_roto_de_san_josé_de_gracia"}
-              className="overflow-hidden pt-0 hover:shadow-2xl transition-all duration-300 group border-0 bg-white"
+              className="overflow-hidden hover:shadow-2xl transition-all duration-300 group border-0 bg-white"
             >
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src={"./turismo02.jpg"}
                   alt={"Turismo 2"}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
+                  className="object-cover group-hover:scale-110 transition-transform duration-500  "
                 />
               </div>
               <CardHeader className="pb-4">
@@ -117,14 +104,14 @@ export function Turism() {
 
             <Card
               key={"aventura_boca_de_tunel"}
-              className="overflow-hidden pt-0 hover:shadow-2xl transition-all duration-300 group border-0 bg-white"
+              className="overflow-hidden hover:shadow-2xl transition-all duration-300 group border-0 bg-white"
             >
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src={"./turismo03.jpg"}
                   alt={"Turismo 3"}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
+                  className="object-cover group-hover:scale-110 transition-transform duration-500  "
                 />
               </div>
               <CardHeader className="pb-4">
@@ -165,14 +152,14 @@ export function Turism() {
 
               <Card
               key={"tranvias"}
-              className="overflow-hidden pt-0 hover:shadow-2xl transition-all duration-300 group border-0 bg-white"
+              className="overflow-hidden hover:shadow-2xl transition-all duration-300 group border-0 bg-white"
             >
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src={"./turismo04.jpg"}
                   alt={"Turismo 4"}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
+                  className="object-cover group-hover:scale-110 transition-transform duration-500  "
                 />
               </div>
               <CardHeader className="pb-4">
@@ -209,14 +196,14 @@ export function Turism() {
 
             <Card
               key={"balnearios"}
-              className="overflow-hidden pt-0 hover:shadow-2xl transition-all duration-300 group border-0 bg-white"
+              className="overflow-hidden hover:shadow-2xl transition-all duration-300 group border-0 bg-white"
             >
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src={"./turismo01.jpg"}
                   alt={"Turismo 1"}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
+                  className="object-cover group-hover:scale-110 transition-transform duration-500  "
                 />
               </div>
               <CardHeader className="pb-4">
@@ -249,14 +236,14 @@ export function Turism() {
 
             <Card
               key={"isla_san_marcos"}
-              className="overflow-hidden pt-0 hover:shadow-2xl transition-all duration-300 group border-0 bg-white"
+              className="overflow-hidden hover:shadow-2xl transition-all duration-300 group border-0 bg-white"
             >
               <div className="relative h-80 overflow-hidden">
                 <Image
                   src={"./turismo06.jpg"}
                   alt={"Turismo 6"}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500 rounded-xl"
+                  className="object-cover group-hover:scale-110 transition-transform duration-500  "
                 />
               </div>
               <CardHeader className="pb-4">
@@ -289,6 +276,7 @@ export function Turism() {
         </div>
       </div>
       </div>
+
     </section>
   )
 }
