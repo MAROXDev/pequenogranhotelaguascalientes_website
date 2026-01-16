@@ -195,7 +195,7 @@ export function Footer({ data }: FooterProps) {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-primary-foreground/60">
             <p>&copy; {currentYear} Pequeño Gran Hotel. Todos los derechos reservados.</p>
             <div className="flex gap-6 text-sm">
-              <Link href="#" className="hover:text-secondary transition-colors">
+              <Link href="/privacidad" className="hover:text-secondary transition-colors">
                 Política de Privacidad
               </Link>
               <Link href="#" className="hover:text-secondary transition-colors">
