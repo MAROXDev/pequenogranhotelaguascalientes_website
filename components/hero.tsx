@@ -30,6 +30,7 @@ export function Hero({ data }: HeroProps) {
          fill
           className="object-cover brightness-[0.65]"
          priority
+         alt={data.title}
         />
 {               /* Imagen Incio con variables */}
 
